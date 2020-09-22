@@ -1,16 +1,22 @@
-/* list */
+/* 上選單效果 */
 $(function(){
-    $("header li:nth-child(1)").click(function(){
-        $("header ul").attr('class','visited1')
-    })
-    $("header li:nth-child(2)").click(function(){
-        $("header ul").attr('class','visited2')
-    })
-    $("header li:nth-child(3)").click(function(){
-        $("header ul").attr('class','visited3')
-    })
-    $("header li:nth-child(4)").click(function(){
-        $("header ul").attr('class','visited4')
+    $(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if(scrollVal >= 1476){
+            $("header ul").attr('class','visited2')
+        } else {
+            $("header ul").attr('class','visited1')
+        }
+        if(scrollVal >= 2460){
+            $("header ul").attr('class','visited3')
+        } else {
+            $("header ul").addClass('class','visited2')
+        }
+        if(scrollVal >= 3713){
+            $("header ul").attr('class','visited4')
+        } else {
+            $("header ul").addClass('class','visited3')
+        }
     })
 })
 /* facebookbutton */
@@ -68,41 +74,6 @@ $(function () {
         if(scrollVal > 300){
             $(".portfolio").addClass("slide")
         };
-        if(scrollVal > 300){
-            $(".leftside2 li:nth-child(1)").animate({
-                opacity: 1
-            },800);
-        };
-        if(scrollVal > 300){
-            $(".leftside2 li:nth-child(2)").animate({
-                opacity: 1
-            },1200);
-        };
-        if(scrollVal > 300){
-            $(".leftside2 li:nth-child(3)").animate({
-                opacity: 1
-            },1600);
-        };
-        if(scrollVal > 400){
-            $(".img1").animate({
-                opacity: 1,
-            },500);
-        };
-        if(scrollVal > 400){
-            $(".img2").animate({
-                opacity: 1,
-            },900);
-        };
-        if(scrollVal > 400){
-            $(".img3").animate({
-                opacity: 1,
-            },1300);
-        };
-        if(scrollVal > 400){
-            $(".img4").animate({
-                opacity: 1,
-            },1700);
-        };
     });
 });
 /* 頁面效果Portfolio */
@@ -111,41 +82,29 @@ $(function(){
         var scrollVal = $(this).scrollTop();
         if(scrollVal > 300){
             $(".portfolio").addClass("slide")
-        };
-        if(scrollVal > 300){
-            $(".leftside2 li:nth-child(1)").animate({
+            $(".leftside2 li:nth-child(1)").delay("500").animate({
                 opacity: 1
-            },1000);
-        };
-        if(scrollVal > 300){
-            $(".leftside2 li:nth-child(2)").animate({
+            },800);
+            $(".leftside2 li:nth-child(2)").delay("1000").animate({
                 opacity: 1
-            },2000);
-        };
-        if(scrollVal > 300){
-            $(".leftside2 li:nth-child(3)").animate({
+            },800);
+            $(".leftside2 li:nth-child(3)").delay("1500").animate({
                 opacity: 1
-            },3000);
+            },800);
         };
         if(scrollVal > 400){
-            $(".img1").animate({
+            $(".img1").delay("1800").animate({
                 opacity: 1,
-            },1000);
-        };
-        if(scrollVal > 400){
-            $(".img2").animate({
+            },500);
+            $(".img2").delay("2100").animate({
                 opacity: 1,
-            },1500);
-        };
-        if(scrollVal > 400){
-            $(".img3").animate({
+            },500);
+            $(".img3").delay("2400").animate({
                 opacity: 1,
-            },2000);
-        };
-        if(scrollVal > 400){
-            $(".img4").animate({
+            },500);
+            $(".img4").delay("2700").animate({
                 opacity: 1,
-            },2500);
+            },500);
         };
     })
 })
@@ -153,26 +112,38 @@ $(function(){
 $(function(){
     $(window).scroll(function () {
         var scrollVal = $(this).scrollTop();
-        $("span").text(scrollVal);
         if(scrollVal > 800){
             $('.about h1').animate({
                 opacity: 1,
             },800)
-        }
-        if(scrollVal > 800){
-            $('.about p').animate({
-                opacity: 1,
-            },1500)
-        }
-        if(scrollVal > 1500){
-            $('.aboutbg h4').animate({
+            $('.about p').delay("500").animate({
                 opacity: 1,
             },800)
         }
-        if(scrollVal > 1500){
-            $('.aboutbg h5').animate({
+        if(scrollVal > 1300){
+            $('.aboutbg h4').animate({
                 opacity: 1,
-            },1500)
+            },800)
+            $('.aboutbg h5').delay("500").animate({
+                opacity: 1,
+            },800)
+        }
+    })
+})
+/* sec1*/
+$(function(){
+    $(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if(scrollVal > 2260){
+            $('.sec1_2_1').animate({
+                opacity: 1,
+            },800);
+            $('.sec1_2_2').delay("500").animate({
+                opacity: 1,
+            },800);
+            $('.sec1_2_3').delay("1000").animate({
+                opacity: 1,
+            },800)
         }
     })
 })
