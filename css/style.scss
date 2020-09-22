@@ -178,22 +178,130 @@ main {
             width: 820px;
             height: 570px;
             background: rgba(200,172,139,0.2);
+            float: left;
+            position: relative;
+            left: -820px;
+            transition: 0.5s all;
+            opacity: 0;
+            article {
+                width: 305px;
+                height: 160px;
+                float: right;
+                margin: 180px 0px 0px 0px;
+                h2 {
+                    font-size: 25px;
+                    font-weight: bold;
+                    margin-bottom: 13px;
+                }
+                li {
+                    line-height: 30px;
+                    font-size: 17px;
+                    position: relative;
+                    margin-left: 25px;
+                    opacity: 0;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        background: url('../images/portic.png');
+                        top: 10px;
+                        left: -20px;
+                    }
+                }
+            }
         }
+        article {
+            width: 700px;
+            height: 460px;
+            float: right;
+            margin: 45px 330px 0px 0px;
+            .img1,.img2,.img3,.img4 {
+                opacity: 0;
+                width: 306px;
+                height: 221px;
+                float: left;
+                margin: 0px 30px 25px 0px;
+            }
+            .img1 {
+                background: url('../images/img_01.png');
+            }
+            .img2 {
+                background: url('../images/img_02.png');
+            }
+            .img3 {
+                background: url('../images/img_03.png');
+            }
+            .img4 {
+                background: url('../images/img_04.png');
+            }
+        }
+    }
+    .slide .leftside2 {
+        left: 0px;
+        opacity: 1;
     }
     .about {
         max-width: 100%;
         height: 985px;
         background: #131e3c;
         transition: 0.8s all;
-        .about2 {
+        article {
+            width: 500px;
+            height: 430px;
+            margin: 0px auto;
+            text-align: center;
+            h3 {
+                font-size: 42px;
+                color: white;
+                line-height: 100px;
+                margin: 0px 0px 50px 0px;
+            }
+            h1 {
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+                margin: 0px 0px 15px 0px;
+                opacity: 0;
+            }
+            p {
+                color: white;
+                line-height: 22px;
+                font-weight: lighter;
+                opacity: 0;
+            }
+        }
+        .aboutbg {
+            width: 100%;
             height: 555px;
-            background-color: yellow;
+            background: url('../images/aboutbg.png');
+            article {
+                width: 500px;
+                height: 555px;
+                text-align: center;
+                h4 {
+                    padding: 240px 0px 15px 0px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    opacity: 0;
+                }
+                h5 {
+                    color: black;
+                    font-weight: normal;
+                    opacity: 0;
+                }
+            }
         }
     }
     .target {
         max-width: 100%;
         height: 1750px;
-        background-color: yellowgreen;
+        background-color: yellow;
+        .sec1 {
+            width: 100%;
+            height: 640px;
+            background: white;
+        }
     }
 
 }

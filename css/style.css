@@ -175,7 +175,59 @@ main {
     main .portfolio .leftside2 {
       width: 820px;
       height: 570px;
-      background: rgba(200, 172, 139, 0.2); }
+      background: rgba(200, 172, 139, 0.2);
+      float: left;
+      position: relative;
+      left: -820px;
+      -webkit-transition: 0.5s all;
+      -o-transition: 0.5s all;
+      transition: 0.5s all;
+      opacity: 0; }
+      main .portfolio .leftside2 article {
+        width: 305px;
+        height: 160px;
+        float: right;
+        margin: 180px 0px 0px 0px; }
+        main .portfolio .leftside2 article h2 {
+          font-size: 25px;
+          font-weight: bold;
+          margin-bottom: 13px; }
+        main .portfolio .leftside2 article li {
+          line-height: 30px;
+          font-size: 17px;
+          position: relative;
+          margin-left: 25px;
+          opacity: 0; }
+          main .portfolio .leftside2 article li::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: url("../images/portic.png");
+            top: 10px;
+            left: -20px; }
+    main .portfolio article {
+      width: 700px;
+      height: 460px;
+      float: right;
+      margin: 45px 330px 0px 0px; }
+      main .portfolio article .img1, main .portfolio article .img2, main .portfolio article .img3, main .portfolio article .img4 {
+        opacity: 0;
+        width: 306px;
+        height: 221px;
+        float: left;
+        margin: 0px 30px 25px 0px; }
+      main .portfolio article .img1 {
+        background: url("../images/img_01.png"); }
+      main .portfolio article .img2 {
+        background: url("../images/img_02.png"); }
+      main .portfolio article .img3 {
+        background: url("../images/img_03.png"); }
+      main .portfolio article .img4 {
+        background: url("../images/img_04.png"); }
+  main .slide .leftside2 {
+    left: 0px;
+    opacity: 1; }
   main .about {
     max-width: 100%;
     height: 985px;
@@ -183,13 +235,52 @@ main {
     -webkit-transition: 0.8s all;
     -o-transition: 0.8s all;
     transition: 0.8s all; }
-    main .about .about2 {
+    main .about article {
+      width: 500px;
+      height: 430px;
+      margin: 0px auto;
+      text-align: center; }
+      main .about article h3 {
+        font-size: 42px;
+        color: white;
+        line-height: 100px;
+        margin: 0px 0px 50px 0px; }
+      main .about article h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin: 0px 0px 15px 0px;
+        opacity: 0; }
+      main .about article p {
+        color: white;
+        line-height: 22px;
+        font-weight: lighter;
+        opacity: 0; }
+    main .about .aboutbg {
+      width: 100%;
       height: 555px;
-      background-color: yellow; }
+      background: url("../images/aboutbg.png"); }
+      main .about .aboutbg article {
+        width: 500px;
+        height: 555px;
+        text-align: center; }
+        main .about .aboutbg article h4 {
+          padding: 240px 0px 15px 0px;
+          font-size: 24px;
+          font-weight: bold;
+          opacity: 0; }
+        main .about .aboutbg article h5 {
+          color: black;
+          font-weight: normal;
+          opacity: 0; }
   main .target {
     max-width: 100%;
     height: 1750px;
-    background-color: yellowgreen; }
+    background-color: yellow; }
+    main .target .sec1 {
+      width: 100%;
+      height: 640px;
+      background: white; }
 
 .fade1 .portfolio, .fade2 .about {
   opacity: 0; }
