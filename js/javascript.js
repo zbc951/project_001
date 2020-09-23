@@ -84,25 +84,25 @@ $(function(){
             $(".portfolio").addClass("slide")
             $(".leftside2 li:nth-child(1)").delay("500").animate({
                 opacity: 1
-            },800);
-            $(".leftside2 li:nth-child(2)").delay("1000").animate({
+            },300);
+            $(".leftside2 li:nth-child(2)").delay("800").animate({
                 opacity: 1
-            },800);
-            $(".leftside2 li:nth-child(3)").delay("1500").animate({
+            },300);
+            $(".leftside2 li:nth-child(3)").delay("1100").animate({
                 opacity: 1
-            },800);
+            },300);
         };
-        if(scrollVal > 400){
-            $(".img1").delay("1800").animate({
+        if(scrollVal > 300){
+            $(".img1").delay("1400").animate({
                 opacity: 1,
             },500);
-            $(".img2").delay("2100").animate({
+            $(".img2").delay("1700").animate({
                 opacity: 1,
             },500);
-            $(".img3").delay("2400").animate({
+            $(".img3").delay("2000").animate({
                 opacity: 1,
             },500);
-            $(".img4").delay("2700").animate({
+            $(".img4").delay("2300").animate({
                 opacity: 1,
             },500);
         };
@@ -130,20 +130,52 @@ $(function(){
         }
     })
 })
-/* sec1*/
+/* sec1 */
 $(function(){
     $(window).scroll(function () {
         var scrollVal = $(this).scrollTop();
-        if(scrollVal > 2260){
-            $('.sec1_2_1').animate({
+        if(scrollVal > 2060){
+            $('.img5').animate({
                 opacity: 1,
-            },800);
-            $('.sec1_2_2').delay("500").animate({
+            },500);
+            $('.img6').delay("500").animate({
                 opacity: 1,
-            },800);
-            $('.sec1_2_3').delay("1000").animate({
+            },500);
+            $('.img7').delay("1000").animate({
                 opacity: 1,
-            },800)
+            },500)
+        }
+    })
+})
+/* sec2 */
+$(function(){
+    $(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if(scrollVal >= 2660){
+            $('.u0').animate({
+                opacity: 1,
+            },300)
+            $('.u1').delay('500').animate({
+                opacity: 1,
+            },200);
+            $('.u2').delay('700').animate({
+                opacity: 1,
+            },200);
+            $('.u3').delay('900').animate({
+                opacity: 1,
+            },200);
+            $('.u4').delay('1100').animate({
+                opacity: 1,
+            },200);
+            $('.u5').delay('1300').animate({
+                opacity: 1,
+            },200);
+            $('.u6').delay('1500').animate({
+                opacity: 1,
+            },200);
+            $('.u7').delay('1700').animate({
+                opacity: 1,
+            },200);
         }
     })
 })

@@ -47,6 +47,9 @@ html {
     box-sizing: border-box;
     background: wheat;
     font-family: "微軟正黑體";
+    .wrapper {
+        min-width: 1600px;
+    }
     .bg {
         width: 100%;
         height: 100%;
@@ -156,6 +159,10 @@ header {
             line-height: 60px;
             margin-left: 30px;
         }
+        iframe {
+            height: 0px;
+            transition: 0.8s height;
+        }
     }
 }
 /* FB按鈕動畫 */
@@ -165,11 +172,15 @@ header {
     &::before {
         transform: scaleY(-1);
     }
+    iframe {
+        height: 450px;
+    }
 }
 main {
     width: 100%;
     position: relative;
     top: 985px;
+    /* 左區 */
     .portfolio {
         width: 100%;
         height: 570px;
@@ -296,7 +307,6 @@ main {
     .target {
         max-width: 100%;
         height: 1750px;
-        background-color: yellow;
         .sec1 {
             width: 100%;
             height: 640px;
@@ -336,13 +346,13 @@ main {
                             font-weight: lighter;
                         }
                     }
-                    .sec1_2_1 {
+                    .img5 {
                         background: url('../images/img_05.png') no-repeat;
                     }
-                    .sec1_2_2 {
+                    .img6 {
                         background: url('../images/img_06.png') no-repeat;
                     }
-                    .sec1_2_3 {
+                    .img7 {
                         background: url('../images/img_07.png') no-repeat;
                     }
                 }
@@ -356,6 +366,7 @@ main {
                 width: 820px;
                 height: 413px;
                 background: rgba(19,30,60,.9);
+                float: left;
                 article {
                     width: 410px;
                     height: 50px;
@@ -365,13 +376,62 @@ main {
                         font-size: 28px;
                         color: white;
                         font-weight: lighter;
+                        margin-bottom: 10px;
                     }
                     span {
                         font-size: 22px;
                         color: white;
-                        
+                        opacity: 0;                        
                     }
                 }
+            }
+            article {
+                width: 560px;
+                height: 250px;
+                float: left;
+                margin: 100px 0px 0px 60px;
+                p {
+                    color: white;
+                    line-height: 30px;
+                    font-weight: lighter;
+                    opacity: 0;
+                }
+            }
+        }
+        .sec3 {
+            width: 100%;
+            height: 700px;
+            background: #f4eee8;
+            position: relative;
+            div {
+                width: 25%;
+                height: 350px;
+                float: left;
+            }
+            .img8 {
+                background: url('../images/img_08.png') no-repeat;
+                background-size: cover;
+                top: 0px;
+                left: 0px;
+
+            }
+            .img9 {
+                background: url('../images/img_09.png') no-repeat;
+                background-size: cover;
+                bottom: 0px;
+                left: 480px;
+            }
+            .img10 {
+                background: url('../images/img_10.png') no-repeat;
+                background-size: cover;
+                top: 0px;
+                right: 480px;
+            }
+            .img11 {
+                background: url('../images/img_11.png') no-repeat;
+                background-size: cover;
+                bottom: 0px;
+                right: 0px;
             }
         }
     }

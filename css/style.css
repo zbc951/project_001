@@ -47,6 +47,8 @@ html {
   box-sizing: border-box;
   background: wheat;
   font-family: "微軟正黑體"; }
+  html .wrapper {
+    min-width: 1600px; }
   html .bg {
     width: 100%;
     height: 100%;
@@ -151,6 +153,11 @@ header {
       color: #d2d5e1;
       line-height: 60px;
       margin-left: 30px; }
+    header .fbbutton iframe {
+      height: 0px;
+      -webkit-transition: 0.8s height;
+      -o-transition: 0.8s height;
+      transition: 0.8s height; }
 
 /* FB按鈕動畫 */
 .slide .fbbutton {
@@ -161,11 +168,14 @@ header {
     -webkit-transform: scaleY(-1);
     -ms-transform: scaleY(-1);
     transform: scaleY(-1); }
+  .slide .fbbutton iframe {
+    height: 450px; }
 
 main {
   width: 100%;
   position: relative;
-  top: 985px; }
+  top: 985px;
+  /* 左區 */ }
   main .portfolio {
     width: 100%;
     height: 570px;
@@ -275,8 +285,7 @@ main {
           opacity: 0; }
   main .target {
     max-width: 100%;
-    height: 1750px;
-    background-color: yellow; }
+    height: 1750px; }
     main .target .sec1 {
       width: 100%;
       height: 640px;
@@ -310,11 +319,11 @@ main {
               font-weight: bold; }
             main .target .sec1 article .sec1_2 div span {
               font-weight: lighter; }
-          main .target .sec1 article .sec1_2 .sec1_2_1 {
+          main .target .sec1 article .sec1_2 .img5 {
             background: url("../images/img_05.png") no-repeat; }
-          main .target .sec1 article .sec1_2 .sec1_2_2 {
+          main .target .sec1 article .sec1_2 .img6 {
             background: url("../images/img_06.png") no-repeat; }
-          main .target .sec1 article .sec1_2 .sec1_2_3 {
+          main .target .sec1 article .sec1_2 .img7 {
             background: url("../images/img_07.png") no-repeat; }
     main .target .sec2 {
       width: 100%;
@@ -323,7 +332,8 @@ main {
       main .target .sec2 .leftside3 {
         width: 820px;
         height: 413px;
-        background: rgba(19, 30, 60, 0.9); }
+        background: rgba(19, 30, 60, 0.9);
+        float: left; }
         main .target .sec2 .leftside3 article {
           width: 410px;
           height: 50px;
@@ -332,10 +342,51 @@ main {
           main .target .sec2 .leftside3 article p {
             font-size: 28px;
             color: white;
-            font-weight: lighter; }
+            font-weight: lighter;
+            margin-bottom: 10px; }
           main .target .sec2 .leftside3 article span {
             font-size: 22px;
-            color: white; }
+            color: white;
+            opacity: 0; }
+      main .target .sec2 article {
+        width: 560px;
+        height: 250px;
+        float: left;
+        margin: 100px 0px 0px 60px; }
+        main .target .sec2 article p {
+          color: white;
+          line-height: 30px;
+          font-weight: lighter;
+          opacity: 0; }
+    main .target .sec3 {
+      width: 100%;
+      height: 700px;
+      background: #f4eee8;
+      position: relative; }
+      main .target .sec3 div {
+        width: 25%;
+        height: 350px;
+        float: left; }
+      main .target .sec3 .img8 {
+        background: url("../images/img_08.png") no-repeat;
+        background-size: cover;
+        top: 0px;
+        left: 0px; }
+      main .target .sec3 .img9 {
+        background: url("../images/img_09.png") no-repeat;
+        background-size: cover;
+        bottom: 0px;
+        left: 480px; }
+      main .target .sec3 .img10 {
+        background: url("../images/img_10.png") no-repeat;
+        background-size: cover;
+        top: 0px;
+        right: 480px; }
+      main .target .sec3 .img11 {
+        background: url("../images/img_11.png") no-repeat;
+        background-size: cover;
+        bottom: 0px;
+        right: 0px; }
 
 .fade1 .portfolio, .fade2 .about {
   opacity: 0; }
