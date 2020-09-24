@@ -1,31 +1,24 @@
 /* 上選單效果 */
 $(function(){
-    $('.li4').click(function(){
-        $('header ul').attr('class','visited4')
-    })
     $(window).scroll(function () {
         var scrollVal = $(this).scrollTop();
-        if(scrollVal >= 1476){
+        if(scrollVal >= 876){
             $("header ul").attr('class','visited2')
         } else {
             $("header ul").attr('class','visited1')
         }
-        if(scrollVal >= 2460){
+        if(scrollVal >= 1860){
             $("header ul").attr('class','visited3')
-        } else {
-            $("header ul").addClass('class','visited2')
         }
-        if(scrollVal >= 3713){
+        if(scrollVal >= 3300){
             $("header ul").attr('class','visited4')
-        } else {
-            $("header ul").addClass('class','visited3')
         }
     })
 })
 /* facebookbutton */
 $(function(){
     $(".fbbutton").click(function(){
-        $("header").toggleClass("slide")
+        $(".portfolio").toggleClass("slidetop")
     })
 })
 /* 點擊滑動 */
@@ -51,7 +44,7 @@ $(function(){
     $(".li4").click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
-            scrollTop: 3713
+            scrollTop: 4000
         },500);
     })
 })
@@ -60,9 +53,9 @@ $(function () {
     $(window).scroll(function () {
         var scrollVal = $(this).scrollTop();
         if(scrollVal > 0){
-            $(".leftside,.fbbutton").fadeOut(300)
+            $(".leftside").fadeOut(300)
         } else{
-            $(".leftside,.fbbutton").fadeIn(500)
+            $(".leftside").fadeIn(500)
         };
         if(scrollVal > 1300){
             $("main").addClass("fade1")
@@ -124,10 +117,10 @@ $(function(){
             },800)
         }
         if(scrollVal > 1300){
-            $('.aboutbg h4').animate({
+            $('.aboutbg h3').animate({
                 opacity: 1,
             },800)
-            $('.aboutbg h5').delay("500").animate({
+            $('.aboutbg h4').delay("500").animate({
                 opacity: 1,
             },800)
         }
@@ -202,5 +195,18 @@ $(function(){
                 opacity: 1,
             },500);
         }
+    })
+})
+/* 頁面重整問題 */
+$(function(){
+    $("html,body").animate({
+        scrollTop: 0,
+        screenLeft: 0,
+    }, 0);
+})
+/* rwdlist */
+$(function(){
+    $('.rwdlistbt').click(function(){
+        $('header').toggleClass('rwdslide')
     })
 })
