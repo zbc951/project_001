@@ -223,7 +223,6 @@ main {
             }
         }
         article {
-            display: inline-block;
             width: 700px;
             height: 460px;
             float: left;
@@ -405,15 +404,34 @@ main {
             position: relative;
             div {
                 width: 25%;
-                height: 350px;
+                height: 349px;
                 float: left;
+                opacity: 0;
+                h2 {
+                    font-size: 28px;
+                    font-weight: bold;
+                    margin: 110px 0px 0px 70px;
+                }
+                h3 {
+                    font-size: 22px;
+                    color: #b88d5b;
+                    margin: 0px 0px 0px 70px;
+                }
+                p {
+                    margin: 25px 0px 0px 75px;
+                }
+                .a2,.a4 {
+                    font-size: 18px;
+                }
+                .a3 {
+                    font-size: 17px;
+                }
             }
             .img8 {
                 background: url('../images/img_08.png') no-repeat;
                 background-size: cover;
                 top: 0px;
                 left: 0px;
-
             }
             .img9 {
                 background: url('../images/img_09.png') no-repeat;
@@ -446,9 +464,84 @@ footer {
     height: 400px;
     background: #131e3c;
     top: 985px;
+    article {
+        width: 600px;
+        height: 400px;
+        float: left;
+        margin: 0px 0px 0px 395px;
+        h4 {
+            color: white;
+            font-size: 20px;
+            margin: 40px 0px 20px 0px;
+            &:first-child {
+                margin-top: 70px;
+            }
+        }
+        p {
+            color: white;
+            line-height: 24px;
+            font-weight: lighter;
+            font-size: 17px;
+        }
+        span {
+            display: block;
+            color: #9ea9c5;
+            margin-top: 50px;
+        }
+    }
     nav {
         width: 500px;
         height: 400px;
+        float: left;
+        h4 {
+            color: white;
+            font-size: 20px;
+            margin: 70px 0px 25px 0px;
+        }
+        div {
+            width: 230px;
+            height: 150px;
+            float: left;
+            p {
+                color: white;
+                font-weight: lighter;
+                margin-bottom: 10px;
+            }
+            input {
+                color: #a6b1cd;
+                background: #131e3c;
+                outline: none;
+                border: solid 1px white;
+                width: 210px;
+                height: 32px;
+                padding-left: 10px;
+                margin-bottom: 10px;
+            }
+            textarea {
+                width: 210px;
+                height: 96px;
+                outline: none;
+                background: #131e3c;
+                border: solid 1px white;
+                color: #a6b1cd;
+                padding: 10px 0px 0px 10px;
+                resize: none;
+            }
+            button {
+                width: 100px;
+                height: 35px;
+                float: right;
+                margin: 5px 8px 0px 0px;
+                font-size: 17px;
+                letter-spacing: 6px;
+                text-align: center;
+                background: #e8c9a5;
+                outline: none;
+                border: none;
+                padding-left: 15px;
+                cursor: pointer;
+            }
+        }
     }
 }
 /* 動畫區 */

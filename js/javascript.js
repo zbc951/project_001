@@ -1,5 +1,8 @@
 /* 上選單效果 */
 $(function(){
+    $('.li4').click(function(){
+        $('header ul').attr('class','visited4')
+    })
     $(window).scroll(function () {
         var scrollVal = $(this).scrollTop();
         if(scrollVal >= 1476){
@@ -176,6 +179,28 @@ $(function(){
             $('.u7').delay('1700').animate({
                 opacity: 1,
             },200);
+        }
+    })
+})
+/* sec3 */
+$(function(){
+    $(window).scroll(function () {
+        var scrollVal = $(this).scrollTop();
+        if(scrollVal >= 2960){
+            $('.img8,.img8_1').animate({
+                opacity: 1,
+            },500);
+            $('.img9,.img9_1').delay('300').animate({
+                opacity: 1,
+            },500);
+        }
+        if(scrollVal >= 3060){
+            $('.img10,.img10_1').animate({
+                opacity: 1,
+            },500);
+            $('.img11,.img11_1').delay('300').animate({
+                opacity: 1,
+            },500);
         }
     })
 })
