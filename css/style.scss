@@ -121,8 +121,7 @@ header {
                 background: black;
                 margin: -2px 0px 0px -20px;
             }
-        }
-        
+        }        
         /* 上選單動畫區 */
         .visited1 .li1,.visited2 .li2,.visited3 .li3,.visited4 .li4 {
             background: #c8ac8b;
@@ -176,7 +175,6 @@ header {
                     line-height: 14px;
                 }
             }
-
         }
     }
     /* 左區 */
@@ -645,27 +643,12 @@ footer {
         opacity: 0;
     }
 }
-@keyframes leftside {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    50% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-}
 @keyframes textfadeout {
     0% {
         opacity: 0;
     }
     50% {
         opacity: 0;
-    }
-}
-@keyframes rwdleftside {
-    0% {
-
     }
 }
 /* RWD */
