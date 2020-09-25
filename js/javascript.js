@@ -239,7 +239,7 @@ $(function(){
     $(".rwdli4").click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
-            scrollTop: 6000
+            scrollTop: 6500
         },500);
         $('header').removeClass('rwdslide')
     })
