@@ -207,7 +207,7 @@ $(function(){
 /* rwdlist */
 $(function(){
     $('.rwdlistbt').click(function(){
-        $('header').addClass('rwdslide')
+        $('header').toggleClass('rwdslide')
     })
     $('.rwdlistbt').blur(function(){
         $('header').removeClass('rwdslide')
@@ -220,23 +220,27 @@ $(function(){
         $body.animate({
             scrollTop: 0
         },500);
+        $('header').removeClass('rwdslide')
     })
     $(".rwdli2").click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
-            scrollTop: 1946
+            scrollTop: 1696
         },500);
+        $('header').removeClass('rwdslide')
     })
     $(".rwdli3").click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
-            scrollTop: 2930
+            scrollTop: 2680
         },500);
+        $('header').removeClass('rwdslide')
     })
     $(".rwdli4").click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
-            scrollTop: 6000
+            scrollTop: 5500
         },500);
+        $('header').removeClass('rwdslide')
     })
 })

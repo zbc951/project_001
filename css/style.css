@@ -131,9 +131,9 @@ header {
     text-align: center;
     position: fixed;
     right: 0px;
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    transform: translateX(100%); }
+    -webkit-transform: translateX(110%);
+    -ms-transform: translateX(110%);
+    transform: translateX(110%); }
     header .rwdlist a {
       display: block;
       color: white;
