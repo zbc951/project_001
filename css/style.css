@@ -53,8 +53,8 @@ html {
     background: url("../images/banner.png") no-repeat top center;
     position: fixed;
     top: 80px;
-    -webkit-animation: banne 1.2s ease-in-out;
-    animation: banne 1.2s ease-in-out;
+    -webkit-animation: banner 1.2s ease-in-out;
+    animation: banner 1.2s ease-in-out;
     z-index: -999; }
 
 /* header */
