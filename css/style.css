@@ -79,7 +79,7 @@ header {
       width: 285px;
       height: 75px;
       background: url("../images/logo.png") no-repeat;
-      background-size: 100%;
+      background-size: 90%;
       float: left;
       margin-top: 5px; }
     header article ul {
@@ -685,24 +685,27 @@ footer {
     width: 50%;
     height: 655px; }
     header .leftside article {
-      max-width: 180px;
+      max-width: 140px;
+      height: 250px;
       float: none;
       margin: 0px auto;
       padding-top: 150px; }
   main {
     top: 735px; }
     main .portfolio {
-      height: 1040px; }
+      height: 1240px; }
       main .portfolio .leftside2 {
         float: none;
         width: 100%;
-        height: 140px; }
+        height: 200px; }
         main .portfolio .leftside2 article {
           float: none;
           margin: 0px auto;
           text-align: center; }
           main .portfolio .leftside2 article li:before {
             left: 0px; }
+          main .portfolio .leftside2 article h2 {
+            padding: 30px 0px 10px 0px; }
       main .portfolio article {
         width: 100%;
         height: 430px;
@@ -710,44 +713,51 @@ footer {
         margin: 20px auto 0px; }
         main .portfolio article .img1, main .portfolio article .img2, main .portfolio article .img3, main .portfolio article .img4 {
           float: none;
-          margin: 20px auto 0px; }
+          margin: 40px auto 0px; }
       main .portfolio .fbbutton {
         display: none; }
     main .target .sec1 {
       display: block;
-      height: 1050px; }
+      height: 1200px; }
+      main .target .sec1 article h1 {
+        font-size: 38px; }
       main .target .sec1 article .sec1_2 {
         height: 885px;
         margin-top: 30px; }
         main .target .sec1 article .sec1_2 p {
-          padding-left: 40px; }
+          padding-left: 50px; }
         main .target .sec1 article .sec1_2 .img5, main .target .sec1 article .sec1_2 .img6, main .target .sec1 article .sec1_2 .img7 {
           float: none;
-          margin: 20px auto 80px; }
+          margin: 20px auto 120px;
+          width: 300px; }
           main .target .sec1 article .sec1_2 .img5:last-child, main .target .sec1 article .sec1_2 .img6:last-child, main .target .sec1 article .sec1_2 .img7:last-child {
             margin-right: auto; }
           main .target .sec1 article .sec1_2 .img5 p, main .target .sec1 article .sec1_2 .img6 p, main .target .sec1 article .sec1_2 .img7 p {
             margin: 0px;
-            padding: 210px 0px 0px 0px; }
-    main .target .sec2 .leftside3 {
-      float: none;
-      width: 100%;
-      height: 90px; }
-      main .target .sec2 .leftside3 article {
+            padding: 230px 0px 0px 0px; }
+    main .target .sec2 {
+      height: 520px;
+      background-size: cover; }
+      main .target .sec2 .leftside3 {
         float: none;
-        margin: 0px auto; }
-        main .target .sec2 .leftside3 article p {
-          padding-top: 10px; }
-    main .target .sec2 article {
-      margin: 0px auto;
-      float: none; }
-      main .target .sec2 article .u1 {
-        padding: 20px 40px 0px; }
-      main .target .sec2 article .u2, main .target .sec2 article .u3, main .target .sec2 article .u4, main .target .sec2 article .u5, main .target .sec2 article .u6, main .target .sec2 article .u7 {
-        padding: 0px 40px; }
+        width: 100%;
+        height: 120px; }
+        main .target .sec2 .leftside3 article {
+          float: none;
+          margin: 0px auto;
+          padding-top: 15px; }
+          main .target .sec2 .leftside3 article p {
+            padding-top: 10px; }
+      main .target .sec2 article {
+        margin: 0px auto;
+        float: none; }
+        main .target .sec2 article .u1 {
+          padding: 40px 40px 0px; }
+        main .target .sec2 article .u2, main .target .sec2 article .u3, main .target .sec2 article .u4, main .target .sec2 article .u5, main .target .sec2 article .u6, main .target .sec2 article .u7 {
+          padding: 0px 40px; }
     main .target .sec3 {
-      height: 1500px;
-      padding-top: 20px; }
+      height: 1585px;
+      padding-top: 80px; }
       main .target .sec3 .img8, main .target .sec3 .img9, main .target .sec3 .img10, main .target .sec3 .img11 {
         float: none;
         width: 300px;
@@ -761,7 +771,7 @@ footer {
         main .target .sec3 .img8_1 h2, main .target .sec3 .img9_1 h2, main .target .sec3 .img10_1 h2, main .target .sec3 .img11_1 h2 {
           margin: 30px 0px 0px 40px; }
   footer {
-    top: 1968px; }
+    top: 2370px; }
     footer .foot article {
       display: none; }
     footer .foot nav {

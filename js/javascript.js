@@ -225,21 +225,21 @@ $(function(){
     $(".rwdli2").click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
-            scrollTop: 1696
+            scrollTop: 1896
         },500);
         $('header').removeClass('rwdslide')
     })
     $(".rwdli3").click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
-            scrollTop: 2680
+            scrollTop: 2880
         },500);
         $('header').removeClass('rwdslide')
     })
     $(".rwdli4").click(function(){
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
-            scrollTop: 5500
+            scrollTop: 6000
         },500);
         $('header').removeClass('rwdslide')
     })
