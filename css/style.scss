@@ -69,12 +69,13 @@ header {
         max-width: 1130px;
         height: 100%;
         margin: 0px auto;
-        // overflow: hidden;
+        overflow: hidden;
         /* LOGO */
         .logo {
             width: 228px;
             height: 76px;
-            background: url('../images/logo.png');
+            background: url('../images/logo.png') no-repeat;
+            background-size: 100%;
             float: left;
             margin: 5px 0px 0px 15px;
         }
@@ -263,7 +264,7 @@ main {
                 h2 {
                     font-size: 25px;
                     font-weight: bold;
-                    margin-bottom: 13px;
+                    padding: 10px 0px;
                 }
                 li {
                     line-height: 30px;
@@ -357,6 +358,7 @@ main {
                 line-height: 22px;
                 font-weight: lighter;
                 opacity: 0;
+                padding: 0px 40px;
             }
         }
         /* 第二部分 */
@@ -369,7 +371,7 @@ main {
                 height: 555px;
                 text-align: center;
                 h3 {
-                    padding: 240px 0px 15px 0px;
+                    padding: 240px 40px 15px;
                     font-size: 24px;
                     font-weight: bold;
                     opacity: 0;
@@ -378,6 +380,7 @@ main {
                     color: black;
                     font-weight: normal;
                     opacity: 0;
+                    padding: 0px 40px
                 }
             }
         }
@@ -831,6 +834,10 @@ footer {
                 article {
                     .sec1_2 {
                         height: 885px;
+                        margin-top: 30px;
+                        p {
+                            padding-left: 40px;
+                        }
                         .img5,.img6,.img7 {
                             float: none;
                             margin: 20px auto 80px;
@@ -839,7 +846,7 @@ footer {
                             }
                             p {
                                 margin: 0px;
-                                padding-top: 200px;
+                                padding: 210px 0px 0px 0px;
                             }
                         }
                     }
@@ -849,19 +856,29 @@ footer {
                 .leftside3 {
                     float: none;
                     width: 100%;
-                    height: 70px;
+                    height: 90px;
                     article {
                         float: none;
                         margin: 0px auto;
+                        p {
+                            padding-top: 10px;
+                        }
                     }
                 }
                 article {
                     margin: 0px auto;
                     float: none;
+                    .u1 {
+                        padding: 20px 40px 0px;
+                    }
+                    .u2,.u3,.u4,.u5,.u6,.u7 {
+                        padding: 0px 40px;
+                    }
                 }
             }
             .sec3 {
                 height: 1500px;
+                padding-top: 20px;
                 .img8,.img9,.img10,.img11 {
                     float: none;
                     width: 300px;
@@ -881,7 +898,7 @@ footer {
         }
     }
     footer {
-        top: 1948px;
+        top: 1968px;
         .foot {
             article {
                 display: none;
@@ -892,7 +909,7 @@ footer {
                 float: none;
                 h2 {
                     margin: 0px 0px 20px 0px;
-                    padding: 20px 0px 0px 10px;
+                    padding: 20px 0px 0px 60px;
                 }
                 div {
                     float: none;

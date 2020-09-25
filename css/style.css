@@ -70,6 +70,7 @@ header {
     max-width: 1130px;
     height: 100%;
     margin: 0px auto;
+    overflow: hidden;
     /* LOGO */
     /* 上選單 */
     /* rwd選單按鈕 */
@@ -77,7 +78,8 @@ header {
     header article .logo {
       width: 228px;
       height: 76px;
-      background: url("../images/logo.png");
+      background: url("../images/logo.png") no-repeat;
+      background-size: 100%;
       float: left;
       margin: 5px 0px 0px 15px; }
     header article ul {
@@ -260,7 +262,7 @@ main {
         main .portfolio .leftside2 article h2 {
           font-size: 25px;
           font-weight: bold;
-          margin-bottom: 13px; }
+          padding: 10px 0px; }
         main .portfolio .leftside2 article li {
           line-height: 30px;
           font-size: 17px;
@@ -337,7 +339,8 @@ main {
         color: white;
         line-height: 22px;
         font-weight: lighter;
-        opacity: 0; }
+        opacity: 0;
+        padding: 0px 40px; }
     main .about .aboutbg {
       width: 100%;
       height: 555px;
@@ -347,14 +350,15 @@ main {
         height: 555px;
         text-align: center; }
         main .about .aboutbg article h3 {
-          padding: 240px 0px 15px 0px;
+          padding: 240px 40px 15px;
           font-size: 24px;
           font-weight: bold;
           opacity: 0; }
         main .about .aboutbg article h4 {
           color: black;
           font-weight: normal;
-          opacity: 0; }
+          opacity: 0;
+          padding: 0px 40px; }
   main .target {
     max-width: 100%;
     height: 1750px;
@@ -707,7 +711,10 @@ footer {
       display: block;
       height: 1050px; }
       main .target .sec1 article .sec1_2 {
-        height: 885px; }
+        height: 885px;
+        margin-top: 30px; }
+        main .target .sec1 article .sec1_2 p {
+          padding-left: 40px; }
         main .target .sec1 article .sec1_2 .img5, main .target .sec1 article .sec1_2 .img6, main .target .sec1 article .sec1_2 .img7 {
           float: none;
           margin: 20px auto 80px; }
@@ -715,19 +722,26 @@ footer {
             margin-right: auto; }
           main .target .sec1 article .sec1_2 .img5 p, main .target .sec1 article .sec1_2 .img6 p, main .target .sec1 article .sec1_2 .img7 p {
             margin: 0px;
-            padding-top: 200px; }
+            padding: 210px 0px 0px 0px; }
     main .target .sec2 .leftside3 {
       float: none;
       width: 100%;
-      height: 70px; }
+      height: 90px; }
       main .target .sec2 .leftside3 article {
         float: none;
         margin: 0px auto; }
+        main .target .sec2 .leftside3 article p {
+          padding-top: 10px; }
     main .target .sec2 article {
       margin: 0px auto;
       float: none; }
+      main .target .sec2 article .u1 {
+        padding: 20px 40px 0px; }
+      main .target .sec2 article .u2, main .target .sec2 article .u3, main .target .sec2 article .u4, main .target .sec2 article .u5, main .target .sec2 article .u6, main .target .sec2 article .u7 {
+        padding: 0px 40px; }
     main .target .sec3 {
-      height: 1500px; }
+      height: 1500px;
+      padding-top: 20px; }
       main .target .sec3 .img8, main .target .sec3 .img9, main .target .sec3 .img10, main .target .sec3 .img11 {
         float: none;
         width: 300px;
@@ -741,7 +755,7 @@ footer {
         main .target .sec3 .img8_1 h2, main .target .sec3 .img9_1 h2, main .target .sec3 .img10_1 h2, main .target .sec3 .img11_1 h2 {
           margin: 30px 0px 0px 40px; }
   footer {
-    top: 1948px; }
+    top: 1968px; }
     footer .foot article {
       display: none; }
     footer .foot nav {
@@ -750,7 +764,7 @@ footer {
       float: none; }
       footer .foot nav h2 {
         margin: 0px 0px 20px 0px;
-        padding: 20px 0px 0px 10px; }
+        padding: 20px 0px 0px 60px; }
       footer .foot nav div {
         float: none;
         margin: 0px auto; } }
