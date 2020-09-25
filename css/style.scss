@@ -97,43 +97,28 @@ header {
                 }
             }
         }
-        /* rwd選單 */
+        /* rwd選單按鈕 */
         .rwdlistbt {
-            width: 50px;
-            height: 40px;
-            margin-top: 20px;
+            display: none;
+            width: 40px;
+            height: 30px;
+            margin: 25px 20px 0px 0px;
             float: right;
             background: transparent;
             border-color: black;
             border-width: 5px 0px 5px 0px;
             outline: none;
             cursor: pointer;
+            &:active {
+                transform: scale(1.2);
+            }
             &::before {
                 content: "";
                 position: absolute;
-                width: 50px;
+                width: 40px;
                 height: 5px;
                 background: black;
-                margin: -2px 0px 0px -25px;
-            }
-        }
-        .rwdlist {
-            width: 100%;
-            height: 0px;
-            background: rgba(19,30,60,.8);
-            transition: 0.5s all;
-            overflow: hidden;
-            text-align: center;
-            a {
-                display: block;
-                color: white;
-                max-width: 1130px;
-                height: 50px;
-                line-height: 50px;
-                border-bottom: dashed 1px;
-                &:active {
-                    background: rgba(19,30,60,.5);
-                }
+                margin: -2px 0px 0px -20px;
             }
         }
         
@@ -141,6 +126,49 @@ header {
         .visited1 .li1,.visited2 .li2,.visited3 .li3,.visited4 .li4 {
             background: #c8ac8b;
             color:white;
+        }
+    }
+    /* rwd選單 */
+    .rwdlist {
+        width: 40%;
+        height: 100%;
+        background: rgba(19,30,60,.8);
+        transition: 0.5s all;
+        text-align: center;
+        position: fixed;
+        right: 0px;
+        transform: translateX(100%);
+        a {
+            display: block;
+            color: white;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: dashed 1px;
+            &:active {
+                background: rgba(19,30,60,.5);
+            }
+        }
+        article {
+            margin-top: 20px;
+            text-align: left;
+            h2 {
+                color: rgb(214, 214, 214);
+                font-size: 18px;
+                margin: 10px 0px;
+            }
+            p {
+                color: rgb(214, 214, 214);
+                font-size: 14px;
+                line-height: 24px;
+            }
+            span {
+                display: block;
+                font-size: 12px;
+                margin-top: 10px;
+                color: white;
+            }
+
         }
     }
     /* 左區 */
@@ -174,7 +202,7 @@ header {
     }    
 }
 .rwdslide .rwdlist {
-    height: 250px;
+    transform: translateX(0%);
 }
 /* main */
 main {
@@ -308,7 +336,7 @@ main {
         background: #131e3c;
         transition: 0.8s all;
         article {
-            width: 500px;
+            max-width: 500px;
             height: 430px;
             margin: 0px auto;
             text-align: center;
@@ -338,7 +366,7 @@ main {
             height: 555px;
             background: url('../images/aboutbg.png') top center;
             article {
-                width: 500px;
+                max-width: 500px;
                 height: 555px;
                 text-align: center;
                 h3 {
@@ -424,7 +452,7 @@ main {
                 float: left;
                 article {
                     width: 410px;
-                    height: 50px;
+                    height: 70px;
                     float: right;
                     margin-top: 100px;
                     p{
@@ -442,7 +470,7 @@ main {
             }
             /* 字區 */
             article {
-                width: 560px;
+                max-width: 560px;
                 height: 250px;
                 float: left;
                 margin: 100px 0px 0px 60px;
@@ -488,26 +516,18 @@ main {
             .img8 {
                 background: url('../images/img_08.png') no-repeat;
                 background-size: cover;
-                top: 0px;
-                left: 0px;
             }
             .img9 {
                 background: url('../images/img_09.png') no-repeat;
                 background-size: cover;
-                bottom: 0px;
-                left: 480px;
             }
             .img10 {
                 background: url('../images/img_10.png') no-repeat;
                 background-size: cover;
-                top: 0px;
-                right: 480px;
             }
             .img11 {
                 background: url('../images/img_11.png') no-repeat;
                 background-size: cover;
-                bottom: 0px;
-                right: 0px;
             }
         }
     }
@@ -555,7 +575,7 @@ footer {
         }
     /* 右區 */
         nav {
-            width: 460px;
+            max-width: 460px;
             height: 400px;
             float: left;
             h2 {
@@ -634,6 +654,11 @@ footer {
         opacity: 0;
     }
 }
+@keyframes rwdleftside {
+    0% {
+
+    }
+}
 /* RWD */
 @media only screen and (max-width:1240px) {
     main {
@@ -683,7 +708,7 @@ footer {
         .leftside {
             width: 45%;
             article {
-                width: 310px;
+                max-width: 320px;
                 height: 200px;
             }
         }
@@ -747,8 +772,131 @@ footer {
     header {
         article {
             overflow: none;
+            ul {
+                li {
+                    display: none;
+                }
+            }
             .rwdlistbt {
                 display: block;
+            }
+        }
+        .leftside {
+            width: 50%;
+            article {
+                max-width: 180px;
+                float: none;
+                margin: 0px auto;
+                padding-top: 250px;
+                h1 {
+                }
+            }
+        }
+    }
+    main {
+        .portfolio {
+            height: 1040px;
+            .leftside2 {
+                float: none;
+                width: 100%;
+                height: 140px;
+                article {
+                    float: none;
+                    margin: 0px auto;
+                    text-align: center;
+                    li:before {
+                        left: 0px;
+                    }
+                }
+            }
+            article {
+                width: 100%;
+                height: 430px;
+                float: none;
+                margin: 20px auto 0px;
+                .img1,.img2,.img3,.img4 {
+                    float: none;
+                    margin: 20px auto 0px;
+                }                
+            }
+            .fbbutton {
+                display: none;
+            }
+        }
+        .target {
+            .sec1 {
+                display: block;
+                height: 1050px;
+                article {
+                    .sec1_2 {
+                        height: 885px;
+                        .img5,.img6,.img7 {
+                            float: none;
+                            margin: 20px auto 80px;
+                            &:last-child {
+                                margin-right: auto;
+                            }
+                            p {
+                                margin: 0px;
+                                padding-top: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+            .sec2 {
+                .leftside3 {
+                    float: none;
+                    width: 100%;
+                    height: 70px;
+                    article {
+                        float: none;
+                        margin: 0px auto;
+                    }
+                }
+                article {
+                    margin: 0px auto;
+                    float: none;
+                }
+            }
+            .sec3 {
+                height: 1500px;
+                .img8,.img9,.img10,.img11 {
+                    float: none;
+                    width: 300px;
+                    height: 240px;
+                    margin: 0px auto;
+                }
+                .img8_1,.img9_1,.img10_1,.img11_1 {
+                    width: 340px;
+                    float: none;
+                    margin: 0px auto;
+                    height: 100px;
+                    h2 {
+                        margin: 30px 0px 0px 40px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        top: 2198px;
+        .foot {
+            article {
+                display: none;
+            }
+            nav {
+                width: 100%;
+                max-width: 1000px;
+                float: none;
+                h2 {
+                    margin: 0px 0px 20px 0px;
+                    padding: 20px 0px 0px 10px;
+                }
+                div {
+                    float: none;
+                    margin: 0px auto;
+                }
             }
         }
     }

@@ -64,6 +64,7 @@ header {
   position: fixed;
   background: white;
   z-index: 1;
+  /* rwd選單 */
   /* 左區 */ }
   header article {
     max-width: 1130px;
@@ -71,7 +72,7 @@ header {
     margin: 0px auto;
     /* LOGO */
     /* 上選單 */
-    /* rwd選單 */
+    /* rwd選單按鈕 */
     /* 上選單動畫區 */ }
     header article .logo {
       width: 228px;
@@ -96,43 +97,68 @@ header {
             -o-transition: 0.5s all;
             transition: 0.5s all; }
     header article .rwdlistbt {
-      width: 50px;
-      height: 40px;
-      margin-top: 20px;
+      display: none;
+      width: 40px;
+      height: 30px;
+      margin: 25px 20px 0px 0px;
       float: right;
       background: transparent;
       border-color: black;
       border-width: 5px 0px 5px 0px;
       outline: none;
       cursor: pointer; }
+      header article .rwdlistbt:active {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
       header article .rwdlistbt::before {
         content: "";
         position: absolute;
-        width: 50px;
+        width: 40px;
         height: 5px;
         background: black;
-        margin: -2px 0px 0px -25px; }
-    header article .rwdlist {
-      width: 100%;
-      height: 0px;
-      background: rgba(19, 30, 60, 0.8);
-      -webkit-transition: 0.5s all;
-      -o-transition: 0.5s all;
-      transition: 0.5s all;
-      overflow: hidden;
-      text-align: center; }
-      header article .rwdlist a {
-        display: block;
-        color: white;
-        max-width: 1130px;
-        height: 50px;
-        line-height: 50px;
-        border-bottom: dashed 1px; }
-        header article .rwdlist a:active {
-          background: rgba(19, 30, 60, 0.5); }
+        margin: -2px 0px 0px -20px; }
     header article .visited1 .li1, header article .visited2 .li2, header article .visited3 .li3, header article .visited4 .li4 {
       background: #c8ac8b;
       color: white; }
+  header .rwdlist {
+    width: 40%;
+    height: 100%;
+    background: rgba(19, 30, 60, 0.8);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    transition: 0.5s all;
+    text-align: center;
+    position: fixed;
+    right: 0px;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%); }
+    header .rwdlist a {
+      display: block;
+      color: white;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: dashed 1px; }
+      header .rwdlist a:active {
+        background: rgba(19, 30, 60, 0.5); }
+    header .rwdlist article {
+      margin-top: 20px;
+      text-align: left; }
+      header .rwdlist article h2 {
+        color: #d6d6d6;
+        font-size: 18px;
+        margin: 10px 0px; }
+      header .rwdlist article p {
+        color: #d6d6d6;
+        font-size: 14px;
+        line-height: 24px; }
+      header .rwdlist article span {
+        display: block;
+        font-size: 12px;
+        margin-top: 10px;
+        color: white; }
   header .leftside {
     width: 43%;
     height: 905px;
@@ -162,7 +188,9 @@ header {
         animation: textfadeout 3.5s ease-out; }
 
 .rwdslide .rwdlist {
-  height: 250px; }
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%); }
 
 /* main */
 main {
@@ -292,7 +320,7 @@ main {
     transition: 0.8s all;
     /* 第二部分 */ }
     main .about article {
-      width: 500px;
+      max-width: 500px;
       height: 430px;
       margin: 0px auto;
       text-align: center; }
@@ -317,7 +345,7 @@ main {
       height: 555px;
       background: url("../images/aboutbg.png") top center; }
       main .about .aboutbg article {
-        width: 500px;
+        max-width: 500px;
         height: 555px;
         text-align: center; }
         main .about .aboutbg article h3 {
@@ -387,7 +415,7 @@ main {
         float: left; }
         main .target .sec2 .leftside3 article {
           width: 410px;
-          height: 50px;
+          height: 70px;
           float: right;
           margin-top: 100px; }
           main .target .sec2 .leftside3 article p {
@@ -400,7 +428,7 @@ main {
             color: white;
             opacity: 0; }
       main .target .sec2 article {
-        width: 560px;
+        max-width: 560px;
         height: 250px;
         float: left;
         margin: 100px 0px 0px 60px; }
@@ -435,24 +463,16 @@ main {
           font-size: 17px; }
       main .target .sec3 .img8 {
         background: url("../images/img_08.png") no-repeat;
-        background-size: cover;
-        top: 0px;
-        left: 0px; }
+        background-size: cover; }
       main .target .sec3 .img9 {
         background: url("../images/img_09.png") no-repeat;
-        background-size: cover;
-        bottom: 0px;
-        left: 480px; }
+        background-size: cover; }
       main .target .sec3 .img10 {
         background: url("../images/img_10.png") no-repeat;
-        background-size: cover;
-        top: 0px;
-        right: 480px; }
+        background-size: cover; }
       main .target .sec3 .img11 {
         background: url("../images/img_11.png") no-repeat;
-        background-size: cover;
-        bottom: 0px;
-        right: 0px; }
+        background-size: cover; }
 
 /* 頁面隱藏動畫 */
 .fade1 .portfolio, .fade2 .about {
@@ -491,7 +511,7 @@ footer {
         color: #9ea9c5;
         margin-top: 50px; }
     footer .foot nav {
-      width: 460px;
+      max-width: 460px;
       height: 400px;
       float: left; }
       footer .foot nav h2 {
@@ -578,6 +598,12 @@ footer {
   50% {
     opacity: 0; } }
 
+@-webkit-keyframes rwdleftside {
+  0% { } }
+
+@keyframes rwdleftside {
+  0% { } }
+
 /* RWD */
 @media only screen and (max-width: 1240px) {
   main .portfolio .fbbutton {
@@ -611,7 +637,7 @@ footer {
   header .leftside {
     width: 45%; }
     header .leftside article {
-      width: 310px;
+      max-width: 320px;
       height: 200px; }
   main .portfolio .leftside2 {
     width: 25%; }
@@ -643,5 +669,87 @@ footer {
 @media only screen and (max-width: 767px) {
   header article {
     overflow: none; }
+    header article ul li {
+      display: none; }
     header article .rwdlistbt {
-      display: block; } }
+      display: block; }
+  header .leftside {
+    width: 50%; }
+    header .leftside article {
+      max-width: 180px;
+      float: none;
+      margin: 0px auto;
+      padding-top: 250px; }
+  main .portfolio {
+    height: 1040px; }
+    main .portfolio .leftside2 {
+      float: none;
+      width: 100%;
+      height: 140px; }
+      main .portfolio .leftside2 article {
+        float: none;
+        margin: 0px auto;
+        text-align: center; }
+        main .portfolio .leftside2 article li:before {
+          left: 0px; }
+    main .portfolio article {
+      width: 100%;
+      height: 430px;
+      float: none;
+      margin: 20px auto 0px; }
+      main .portfolio article .img1, main .portfolio article .img2, main .portfolio article .img3, main .portfolio article .img4 {
+        float: none;
+        margin: 20px auto 0px; }
+    main .portfolio .fbbutton {
+      display: none; }
+  main .target .sec1 {
+    display: block;
+    height: 1050px; }
+    main .target .sec1 article .sec1_2 {
+      height: 885px; }
+      main .target .sec1 article .sec1_2 .img5, main .target .sec1 article .sec1_2 .img6, main .target .sec1 article .sec1_2 .img7 {
+        float: none;
+        margin: 20px auto 80px; }
+        main .target .sec1 article .sec1_2 .img5:last-child, main .target .sec1 article .sec1_2 .img6:last-child, main .target .sec1 article .sec1_2 .img7:last-child {
+          margin-right: auto; }
+        main .target .sec1 article .sec1_2 .img5 p, main .target .sec1 article .sec1_2 .img6 p, main .target .sec1 article .sec1_2 .img7 p {
+          margin: 0px;
+          padding-top: 200px; }
+  main .target .sec2 .leftside3 {
+    float: none;
+    width: 100%;
+    height: 70px; }
+    main .target .sec2 .leftside3 article {
+      float: none;
+      margin: 0px auto; }
+  main .target .sec2 article {
+    margin: 0px auto;
+    float: none; }
+  main .target .sec3 {
+    height: 1500px; }
+    main .target .sec3 .img8, main .target .sec3 .img9, main .target .sec3 .img10, main .target .sec3 .img11 {
+      float: none;
+      width: 300px;
+      height: 240px;
+      margin: 0px auto; }
+    main .target .sec3 .img8_1, main .target .sec3 .img9_1, main .target .sec3 .img10_1, main .target .sec3 .img11_1 {
+      width: 340px;
+      float: none;
+      margin: 0px auto;
+      height: 100px; }
+      main .target .sec3 .img8_1 h2, main .target .sec3 .img9_1 h2, main .target .sec3 .img10_1 h2, main .target .sec3 .img11_1 h2 {
+        margin: 30px 0px 0px 40px; }
+  footer {
+    top: 2198px; }
+    footer .foot article {
+      display: none; }
+    footer .foot nav {
+      width: 100%;
+      max-width: 1000px;
+      float: none; }
+      footer .foot nav h2 {
+        margin: 0px 0px 20px 0px;
+        padding: 20px 0px 0px 10px; }
+      footer .foot nav div {
+        float: none;
+        margin: 0px auto; } }

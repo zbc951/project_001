@@ -57,12 +57,12 @@ $(function () {
         } else{
             $(".leftside").fadeIn(500)
         };
-        if(scrollVal > 1300){
+        if(scrollVal > 1400){
             $("main").addClass("fade1")
         } else{
             $("main").removeClass("fade1")
         };
-        if(scrollVal > 2200){
+        if(scrollVal > 2400){
             $("main").addClass("fade2")
         } else{
             $("main").removeClass("fade2")
@@ -206,7 +206,37 @@ $(function(){
 })
 /* rwdlist */
 $(function(){
-    $('.rwdlistbt').click(function(){
-        $('header').toggleClass('rwdslide')
+    $('.rwdlistbt').focus(function(){
+        $('header').addClass('rwdslide')
+    })
+    $('.rwdlistbt').blur(function(){
+        $('header').removeClass('rwdslide')
+    })
+})
+/* rwd點擊滑動 */
+$(function(){
+    $(".rwdli1").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+            scrollTop: 0
+        },500);
+    })
+    $(".rwdli2").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+            scrollTop: 1946
+        },500);
+    })
+    $(".rwdli3").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+            scrollTop: 2930
+        },500);
+    })
+    $(".rwdli4").click(function(){
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+            scrollTop: 6000
+        },500);
     })
 })
