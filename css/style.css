@@ -163,8 +163,6 @@ header {
     width: 43%;
     height: 905px;
     background: rgba(19, 30, 60, 0.8);
-    -webkit-animation: leftside 1.5s ease-out;
-    animation: leftside 1.5s ease-out;
     /* 文字 */ }
     header .leftside article {
       width: 418px;
@@ -177,15 +175,15 @@ header {
         letter-spacing: 1px;
         font-weight: bold;
         margin-bottom: 15px;
-        -webkit-animation: textfadeout 3s ease-out;
-        animation: textfadeout 3s ease-out; }
+        -webkit-animation: textfadeout 1s ease-out;
+        animation: textfadeout 1s ease-out; }
       header .leftside article p {
         font-size: 17px;
         color: white;
         line-height: 26px;
         font-weight: lighter;
-        -webkit-animation: textfadeout 3.5s ease-out;
-        animation: textfadeout 3.5s ease-out; }
+        -webkit-animation: textfadeout 1.5s ease-out;
+        animation: textfadeout 1.5s ease-out; }
 
 .rwdslide .rwdlist {
   -webkit-transform: translateX(0%);
@@ -674,73 +672,76 @@ footer {
     header article .rwdlistbt {
       display: block; }
   header .leftside {
-    width: 50%; }
+    width: 50%;
+    height: 655px; }
     header .leftside article {
       max-width: 180px;
       float: none;
       margin: 0px auto;
       padding-top: 250px; }
-  main .portfolio {
-    height: 1040px; }
-    main .portfolio .leftside2 {
-      float: none;
-      width: 100%;
-      height: 140px; }
-      main .portfolio .leftside2 article {
+  main {
+    top: 735px; }
+    main .portfolio {
+      height: 1040px; }
+      main .portfolio .leftside2 {
         float: none;
-        margin: 0px auto;
-        text-align: center; }
-        main .portfolio .leftside2 article li:before {
-          left: 0px; }
-    main .portfolio article {
-      width: 100%;
-      height: 430px;
-      float: none;
-      margin: 20px auto 0px; }
-      main .portfolio article .img1, main .portfolio article .img2, main .portfolio article .img3, main .portfolio article .img4 {
+        width: 100%;
+        height: 140px; }
+        main .portfolio .leftside2 article {
+          float: none;
+          margin: 0px auto;
+          text-align: center; }
+          main .portfolio .leftside2 article li:before {
+            left: 0px; }
+      main .portfolio article {
+        width: 100%;
+        height: 430px;
         float: none;
         margin: 20px auto 0px; }
-    main .portfolio .fbbutton {
-      display: none; }
-  main .target .sec1 {
-    display: block;
-    height: 1050px; }
-    main .target .sec1 article .sec1_2 {
-      height: 885px; }
-      main .target .sec1 article .sec1_2 .img5, main .target .sec1 article .sec1_2 .img6, main .target .sec1 article .sec1_2 .img7 {
+        main .portfolio article .img1, main .portfolio article .img2, main .portfolio article .img3, main .portfolio article .img4 {
+          float: none;
+          margin: 20px auto 0px; }
+      main .portfolio .fbbutton {
+        display: none; }
+    main .target .sec1 {
+      display: block;
+      height: 1050px; }
+      main .target .sec1 article .sec1_2 {
+        height: 885px; }
+        main .target .sec1 article .sec1_2 .img5, main .target .sec1 article .sec1_2 .img6, main .target .sec1 article .sec1_2 .img7 {
+          float: none;
+          margin: 20px auto 80px; }
+          main .target .sec1 article .sec1_2 .img5:last-child, main .target .sec1 article .sec1_2 .img6:last-child, main .target .sec1 article .sec1_2 .img7:last-child {
+            margin-right: auto; }
+          main .target .sec1 article .sec1_2 .img5 p, main .target .sec1 article .sec1_2 .img6 p, main .target .sec1 article .sec1_2 .img7 p {
+            margin: 0px;
+            padding-top: 200px; }
+    main .target .sec2 .leftside3 {
+      float: none;
+      width: 100%;
+      height: 70px; }
+      main .target .sec2 .leftside3 article {
         float: none;
-        margin: 20px auto 80px; }
-        main .target .sec1 article .sec1_2 .img5:last-child, main .target .sec1 article .sec1_2 .img6:last-child, main .target .sec1 article .sec1_2 .img7:last-child {
-          margin-right: auto; }
-        main .target .sec1 article .sec1_2 .img5 p, main .target .sec1 article .sec1_2 .img6 p, main .target .sec1 article .sec1_2 .img7 p {
-          margin: 0px;
-          padding-top: 200px; }
-  main .target .sec2 .leftside3 {
-    float: none;
-    width: 100%;
-    height: 70px; }
-    main .target .sec2 .leftside3 article {
-      float: none;
-      margin: 0px auto; }
-  main .target .sec2 article {
-    margin: 0px auto;
-    float: none; }
-  main .target .sec3 {
-    height: 1500px; }
-    main .target .sec3 .img8, main .target .sec3 .img9, main .target .sec3 .img10, main .target .sec3 .img11 {
-      float: none;
-      width: 300px;
-      height: 240px;
-      margin: 0px auto; }
-    main .target .sec3 .img8_1, main .target .sec3 .img9_1, main .target .sec3 .img10_1, main .target .sec3 .img11_1 {
-      width: 340px;
-      float: none;
+        margin: 0px auto; }
+    main .target .sec2 article {
       margin: 0px auto;
-      height: 100px; }
-      main .target .sec3 .img8_1 h2, main .target .sec3 .img9_1 h2, main .target .sec3 .img10_1 h2, main .target .sec3 .img11_1 h2 {
-        margin: 30px 0px 0px 40px; }
+      float: none; }
+    main .target .sec3 {
+      height: 1500px; }
+      main .target .sec3 .img8, main .target .sec3 .img9, main .target .sec3 .img10, main .target .sec3 .img11 {
+        float: none;
+        width: 300px;
+        height: 240px;
+        margin: 0px auto; }
+      main .target .sec3 .img8_1, main .target .sec3 .img9_1, main .target .sec3 .img10_1, main .target .sec3 .img11_1 {
+        width: 340px;
+        float: none;
+        margin: 0px auto;
+        height: 100px; }
+        main .target .sec3 .img8_1 h2, main .target .sec3 .img9_1 h2, main .target .sec3 .img10_1 h2, main .target .sec3 .img11_1 h2 {
+          margin: 30px 0px 0px 40px; }
   footer {
-    top: 2198px; }
+    top: 1948px; }
     footer .foot article {
       display: none; }
     footer .foot nav {

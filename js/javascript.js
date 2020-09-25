@@ -206,7 +206,7 @@ $(function(){
 })
 /* rwdlist */
 $(function(){
-    $('.rwdlistbt').focus(function(){
+    $('.rwdlistbt').click(function(){
         $('header').addClass('rwdslide')
     })
     $('.rwdlistbt').blur(function(){
