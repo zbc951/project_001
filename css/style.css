@@ -151,15 +151,16 @@ header {
       header .rwdlist article h2 {
         color: #d6d6d6;
         font-size: 18px;
-        margin: 10px 0px; }
+        margin: 10px 0px 0px 20px; }
       header .rwdlist article p {
         color: #d6d6d6;
-        font-size: 14px;
-        line-height: 24px; }
+        font-size: 13px;
+        line-height: 20px;
+        margin: 0px 20px; }
       header .rwdlist article span {
         display: block;
         font-size: 12px;
-        margin-top: 10px;
+        margin: 10px 20px 0px;
         color: white; }
   header .leftside {
     width: 43%;
